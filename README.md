@@ -1,10 +1,7 @@
+   <img align="right" src=".github/AppIcon.png" width="300" /> 
 
+# 🌙 Athkar App (تطبيق أذكاري) 
 
-# 🌙 Athkar App (تطبيق أذكاري)
-
-[](https://kotlinlang.org)
-[](https://developer.android.com/jetpack/compose)
-[](https://developer.android.com/topic/architecture)
 
 **Athkar App** is a modern, beautifully designed Android application built to help Muslims maintain their daily habits of reading Morning and Evening supplications (Azkar), alongside a digital Tasbeeh counter.
 
@@ -26,7 +23,7 @@ Built entirely with **Kotlin** and **Jetpack Compose**, it features a smooth UI,
 
 | App Icon | Home Screen | Morning Azkar |
 | :---: | :---: | :---: |
-| \<img src="[///" width="200"/\> | \<img src="///" width="200"/\> | \<img src="///" width="200"/\> | \<img src="///" width="200"/\> |
+| <img src=".github/AppIcon.png" width="200"/> | <img src=".github/mainScreen.png" width="200"/> | <img src=".github/screen1.png" width="200"/> |
 
 ## 🛠️ Tech Stack & Architecture
 

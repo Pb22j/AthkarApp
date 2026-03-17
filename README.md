@@ -1,4 +1,4 @@
-   <img align="right" src=".github/AppIcon.png" width="300" /> 
+   <img align="right" src=".github/image.png" width="300" /> 
 
 # 🌙 Athkar App (تطبيق أذكاري) 
 
@@ -23,7 +23,7 @@ Built entirely with **Kotlin** and **Jetpack Compose**, it features a smooth UI,
 
 | App Icon | Home Screen | Morning Azkar |
 | :---: | :---: | :---: |
-| <img src=".github/AppIcon.png" width="200"/> | <img src=".github/mainScreen.png" width="200"/> | <img src=".github/screen1.png" width="200"/> |
+| <img src=".github/image.png" width="200"/> | <img src=".github/mainScreen.png" width="200"/> | <img src=".github/screen1.png" width="200"/> |
 
 ## 🛠️ Tech Stack & Architecture
 

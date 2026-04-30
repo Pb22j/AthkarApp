@@ -183,13 +183,13 @@ fun AzkarListContent(
 ) {
     val userProgress by viewModel.userProgress.collectAsState(initial = null)
 
-    var sessionCounts by remember(azkarList) {
-        mutableStateOf(azkarList.associate { it.id to it.count })
+    val sessionCounts = remember(azkarList) {
+        mutableStateMapOf(*azkarList.map { it.id to it.count }.toTypedArray())
     }
     var sessionTotal by remember { mutableIntStateOf(0) }
     var reorderedList by remember(azkarList) { mutableStateOf(azkarList) }
 
-    val completedAll = sessionCounts.values.all { it == 0 }
+    val completedAll by remember(azkarList) { derivedStateOf { sessionCounts.values.all { it == 0 } } }
 
     if (completedAll && editMode == EditMode.NONE) {
         LaunchedEffect(Unit) {
@@ -245,7 +245,7 @@ fun AzkarListContent(
                         zikr = zikr,
                         count = count,
                         onCountChange = {
-                            sessionCounts = sessionCounts.toMutableMap().apply { this[zikr.id] = it }
+                            sessionCounts[zikr.id] = it
                             sessionTotal++
                         },
                         hapticManager = hapticManager,

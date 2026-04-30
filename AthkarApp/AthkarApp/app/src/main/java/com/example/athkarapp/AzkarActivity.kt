@@ -84,7 +84,7 @@ fun AzkarScreen(
     hapticManager: HapticManager,
     category: AzkarCategory,
     onBack: () -> Unit) {
-    val azkarList by viewModel.getAzkarByCategory(category.dbValue).collectAsState(initial = emptyList())
+    val azkarList by remember(category) { viewModel.getAzkarByCategory(category.dbValue) }.collectAsState(initial = emptyList())
     var showAddDialog by remember { mutableStateOf(false) }
     var editMode by remember { mutableStateOf(EditMode.NONE) }
     var showFabMenu by remember { mutableStateOf(false) }

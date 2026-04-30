@@ -45,10 +45,12 @@ class TasbeehActivity : ComponentActivity() {
 fun TasbeehScreen(isDarkTheme: Boolean, onBack: () -> Unit) {
     var count by remember { mutableIntStateOf(0) }
 
-    val backgroundBrush = if (isDarkTheme) {
-        Brush.verticalGradient(listOf(Color(0xFF121212), Color(0xFF000000)))
-    } else {
-        Brush.verticalGradient(listOf(Color(0xFF81C784), Color(0xFFC8E6C9)))
+    val backgroundBrush = remember(isDarkTheme) {
+        if (isDarkTheme) {
+            Brush.verticalGradient(listOf(Color(0xFF121212), Color(0xFF000000)))
+        } else {
+            Brush.verticalGradient(listOf(Color(0xFF81C784), Color(0xFFC8E6C9)))
+        }
     }
     
     Scaffold(

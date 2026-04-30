@@ -56,10 +56,12 @@ fun MainScreen(viewModel: AzkarViewModel, isDarkTheme: Boolean) {
     var showMenu by remember { mutableStateOf(false) }
     var showResetDialog by remember { mutableStateOf(false) }
 
-    val backgroundBrush = if (isDarkTheme) {
-        Brush.verticalGradient(listOf(Color(0xFF121212), Color(0xFF000000)))
-    } else {
-        Brush.verticalGradient(listOf(Color(0xFFE3F2FD), Color(0xFFFFFFFF)))
+    val backgroundBrush = remember(isDarkTheme) {
+        if (isDarkTheme) {
+            Brush.verticalGradient(listOf(Color(0xFF121212), Color(0xFF000000)))
+        } else {
+            Brush.verticalGradient(listOf(Color(0xFFE3F2FD), Color(0xFFFFFFFF)))
+        }
     }
 
     Scaffold(

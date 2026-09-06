@@ -1,4 +1,4 @@
-   <img align="right" src="[.github/Appicon2.png](https://github.com/Pb22j/AthkarApp/blob/main/.github/Appicon2.png)" width="300" /> 
+   <img align="right" src=".github/Appicon2.png" width="300" /> 
 
 # 🌙 Athkar App (تطبيق أذكار المسلم) 
 

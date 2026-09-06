@@ -23,7 +23,7 @@ Built entirely with **Kotlin** and **Jetpack Compose**, it features a smooth UI,
 
 | App Icon | Home Screen | Morning Azkar |
 | :---: | :---: | :---: |
-| <img src=".github/Appicon2.png" width="200"/> | <img src=".github/mainScreen.png" width="200"/> | <img src=".github/screen1.png" width="200"/> |
+| <img src="https://raw.githubusercontent.com/pb22j/AthkarApp/main/.github/Appicon2.png" width="200"/> | <img src="https://raw.githubusercontent.com/pb22j/AthkarApp/main/.github/mainScreen.png" width="200"/> | <img src="https://raw.githubusercontent.com/pb22j/AthkarApp/main/.github/screen1.png" width="200"/> |
 
 ## 🛠️ Tech Stack & Architecture
 
